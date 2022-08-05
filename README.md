@@ -13,4 +13,4 @@
 
 ### Demo Screenshot
 
-![This is an image](demo_screenshots/minishell-demo.png)
+![This is an image](demo_screenshots/minishell-demoa.png)
