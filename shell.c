@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <string.h>
+#include <ctype.h>
 #include "shell.h"        // the header file for the program (with docs)
 
 #define MAX_BUFFER_SIZE 80
@@ -251,15 +252,15 @@ void updateHistoryList(char* input) {
 }
 
 void freeHistoryList() {
-    if (historyList == NULL) {
-        return;   
-    }
-    node_t* currentIter = historyList->head;
-    while(currentIter != NULL) {
-        node_t* nextIter = currentIter->next;
+	if (historyList == NULL) {
+		return;   
+	}
+	node_t* currentIter = historyList->head;
+	while(currentIter != NULL) {
+		node_t* nextIter = currentIter->next;
 		free(currentIter->data);
 		free(currentIter);
 		currentIter = nextIter;
-    }
-    free(historyList);
+	}
+	free(historyList);
 }
