@@ -18,7 +18,7 @@ int main() {
 	signal(SIGINT, sigint_handler);
 	historyList = createList();
 	while (1) {                  // exit by "exit" command or Ctrl+C
-		write(1, "mini-shell>", 12);
+		write(1, "mini-shell>>> ", 15);
 		char line[MAX_BUFFER_SIZE];
 		fgets(line, MAX_BUFFER_SIZE, stdin);
 		updateHistoryList(line);
