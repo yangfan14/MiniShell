@@ -13,4 +13,4 @@
 
 ### Demo Screenshot
 
-![This is an image](demo_screenshots/demo.png)
+![This is an image](demo_screenshots/demoImage.png)
